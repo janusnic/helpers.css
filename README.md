@@ -48,7 +48,7 @@ Use those classes instead of writing the rules in your css and your website will
 ## 3. On responsivity
 
 **helpers.css** provides classes for fonts and line-heights.  
-By using those classes you can extend the helpers.css with your own media queries to change the values of each class according to a specific viewport. [Example](https://github.com/JadJoubran/helpers.css/blob/master/examples/responsive.css)
+By using those classes you can extend the helpers.css with your own media queries to change the values of each class according to a specific viewport. [Example](https://github.com/JadJoubran/helpers.css/blob/master/examples/responsive.css)  
 We understand that such responsivity can be achieved using other techniques, but it can also be achived if you're using helpers.css.
 
 
