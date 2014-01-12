@@ -61,6 +61,13 @@ And Emmet (formerly Zen Coding)
 _Note that for margin and padding helpers, values available are 0, 5, 10, 15 and 20_
 
 
+## But I am using a CSS Preprocessor! Less/sass/stylus
+
+**helpers.css** doesn't conflict with your CSS Preprocessor since it's letting you define your styles right from the HTML, without using inline styles of course.
+You can use helpers.css with any preprocessor if you want.
+
+
+
 ## Contributors
 
 Developed by Jad Joubran [@JoubranJad](https://twitter.com/joubranjad)
