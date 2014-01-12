@@ -22,7 +22,7 @@ The RTL file should be only included (after the main file) in the RTL version of
 How many times while writing the HTML of a view, you had to go to the css file to add a selector and write `padding-top: 5px`
 Instead you can now just give the corresponding class in the html.
 #### Without helpers.css
-	<!-- btn btn-success are defined in Twitter bootstrap, or any other button class you have defined -->
+	<!-- btn btn-success are defined in Twitter bootstrap or any other button class you have defined -->
 	<div class="btn btn-success header_button">Login</div>
 	<style>
 	.header_button{
@@ -33,7 +33,7 @@ Instead you can now just give the corresponding class in the html.
 	</style>
 
 #### Using helpers.css
-	<!-- btn btn-success are defined in Twitter bootstrap, or any other button class you have defined -->
+	<!-- btn btn-success are defined in Twitter bootstrap or any other button class you have defined -->
 	<div class="btn btn-success pl10 pr10 mb5">Login</div>
 
 If you've already used Emmet (formerly Zen Coding) you should be familiar with the class naming.
@@ -56,8 +56,8 @@ We understand that such responsivity can be achieved using other techniques, but
 
 **helpers.css** borrows the same convention from Twitter Bootstrap: .pull-left for float: left, etc..  
 And Emmet (formerly Zen Coding)  
-`pr5` <small>==></small> `padding-right: 5px;`  
-`m20`	<small>==></small> `margin: 20px;`  
+`pr5` => `padding-right: 5px;`  
+`m20` => `margin: 20px;`  
 _Note that for margin and padding helpers, values available are 0, 5, 10, 15 and 20_
 
 
