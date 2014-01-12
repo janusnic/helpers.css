@@ -56,9 +56,9 @@ We understand that such responsivity can be achieved using other techniques, but
 
 **helpers.css** borrows the same convention from Twitter Bootstrap: .pull-left for float: left, etc..  
 And Emmet (formerly Zen Coding)  
-pr5 ==> padding-right: 5px;  
-m20	==> margin: 20px;  
-_(Note that for margin and padding helpers, values available are 0, 5, 10, 15 and 20)_
+`pr5` <small>==></small> `padding-right: 5px;`  
+`m20`	<small>==></small> `margin: 20px;`  
+_Note that for margin and padding helpers, values available are 0, 5, 10, 15 and 20_
 
 
 ## Contributors
