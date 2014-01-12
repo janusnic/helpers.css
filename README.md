@@ -1,29 +1,61 @@
-# Helpers.css
+# helpers.css
+
 
 ## Intro
 
-**Helpers.css** is another [eTobb.com](http://www.eTobb.com) Open Source contribution that helps developers build LTR websites that can be easily converted to RTL (and vice versa).
-**Helpers.css** also gives you control over responsivity.
+**helpers.css** is another [eTobb.com](http://www.eTobb.com) Open Source contribution that helps developers in three different ways:
+
+	1. 	build websites even faster without often switching to the stylesheet and adding new selectors with the same set of rules.
+	2. 	build LTR websites that can be easily converted to RTL (and vice versa).
+	3. 	build websites with precise control over responsivity.
 
 
 ## Source
 
-The main file is [helpers.css](https://github.com/JadJoubran/helpers.css/blob/master/src/helpers.css)
+The main file that should be included is [helpers.css](https://github.com/JadJoubran/helpers.css/blob/master/src/helpers.css)
+The RTL file should be only included (after the main file) in the RTL version of your website (if any) [rtl.helpers.css](https://github.com/JadJoubran/helpers.css/blob/master/src/rtl.helpers.css)
 
-## On directions (LTR/RTL)
 
-**Helpers.css** provides classes for margins, paddings, floats, text-aligns and others..
+## 1. On development Speed and code maintenance
+
+**helpers.css** allows you to use classes instead of writing styles for the most common rules (padding, margin).
+How many times while writing the HTML of a view, you had to go to the css file to add a selector and write `padding-top: 5px`
+Instead you can now just give the corresponding class in the html.
+#### Without helpers.css
+	<div class="header_button">Login</div>
+	<style>
+	.header_button{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 5px;
+	}
+	</style>
+
+#### Using helpers.css
+	<div class="pl10 pr10 mb5">Login</div>
+
+If you've already used Emmet (formerly Zen Coding) you should be familiar with the class naming.
+
+
+## 2. On directions (LTR/RTL)
+
+**helpers.css** provides classes for margins, paddings, floats, text-aligns and others..
 Use those classes instead of writing the rules in your css and your website will be easily convertable to the other direction, by including th rtl.helpers.css which overrides those helpers to behave in the opposite way: .pull-left would float: right, ml5 (margin-left: 5) would do a margin-right: 5, etc..
 
-## On responsivity
 
-**Helpers.css** provides classes for fonts and line-heights.
-By using those classes you can extend the helpers.css with your own media queries to change the values of each class. Example [here](https://github.com/JadJoubran/helpers.css/blob/master/examples/responsive.css)
+## 3. On responsivity
+
+**helpers.css** provides classes for fonts and line-heights.
+By using those classes you can extend the helpers.css with your own media queries to change the values of each class according to a specific viewport. [Example](https://github.com/JadJoubran/helpers.css/blob/master/examples/responsive.css)
 
 
 ## Conventions
 
-**Helpers.css** borrows the same convention from Twitter Bootstrap: .pull-left for float: left, etc..
+**helpers.css** borrows the same convention from Twitter Bootstrap: .pull-left for float: left, etc..
+And Emmet (formerly Zen Coding)
+pr5 ==> padding-right: 5px;
+m20	==> margin: 20px;
+_(Note that for margin and padding helpers, values available are 0, 5, 10, 15 and 20)_
 
 
 ## Contributors
