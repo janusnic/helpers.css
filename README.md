@@ -16,7 +16,7 @@ The main file that should be included is [helpers.css](https://github.com/JadJou
 The RTL file should be only included (after the main file) in the RTL version of your website (if any) [rtl.helpers.css](https://github.com/JadJoubran/helpers.css/blob/master/src/rtl.helpers.css)
 
 
-## 1. On development Speed and code maintenance
+## 1. On development speed and code maintenance
 
 **helpers.css** allows you to use classes instead of writing styles for the most common rules (padding, margin).
 How many times while writing the HTML of a view, you had to go to the css file to add a selector and write `padding-top: 5px`
@@ -58,13 +58,15 @@ We understand that such responsivity can be achieved using other techniques, but
 And Emmet (formerly Zen Coding)  
 `pr5` => `padding-right: 5px;`  
 `m20` => `margin: 20px;`  
-_Note that for margin and padding helpers, values available are 0, 5, 10, 15 and 20_
+_Margin and padding helpers, values available are 0, 5, 10, 15 and 20_
+_Font helpers are available from 9px to 30px(font9, font10, etc..)_
+_Line height helpers are available from 10 to 30_
 
 
-## But I am using a CSS Preprocessor! Less/sass/stylus
+## But I am using a CSS Preprocessor!
 
 **helpers.css** doesn't conflict with your CSS Preprocessor since it's letting you define your styles right from the HTML, without using inline styles of course.
-You can use helpers.css with any preprocessor if you want.
+You can use helpers.css with any preprocessor you want.
 
 
 
