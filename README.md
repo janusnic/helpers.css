@@ -69,6 +69,11 @@ _Line height helpers are available from 10 to 30_
 You can use helpers.css with any preprocessor you want.
 
 
+## Contributing
+
+If you have ideas regarding **helpers.css**, make sure to open a new issue with descriptive details.  
+Or just send me pull requests.
+
 
 ## Contributors
 
