@@ -1,3 +1,4 @@
+
 # helpers.css
 
 
@@ -42,7 +43,7 @@ If you've already used Emmet (formerly Zen Coding) you should be familiar with t
 ## 2. On directions (LTR/RTL)
 
 **helpers.css** provides classes for margins, paddings, floats, text-aligns and others... 
-Use those classes instead of writing the rules in your css and your website will be easily convertable to the other direction, by including th rtl.helpers.css which overrides those helpers to behave in the opposite way: .pull-left would float: right, ml5 (margin-left: 5) would do a margin-right: 5, etc..
+Use those classes instead of writing the rules in your css and your website will be easily convertable to the other direction, by including rtl.helpers.css which overrides those helpers to behave in the opposite way: .pull-left would float: right, ml5 (margin-left: 5) would do a margin-right: 5, etc..
 
 
 ## 3. On responsivity
