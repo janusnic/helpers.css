@@ -45,6 +45,38 @@ If you've already used Emmet (formerly Zen Coding) you should be familiar with t
 Use those classes instead of writing the rules in your css and your website will be easily convertable to the other direction, by including rtl.helpers.css which overrides those helpers to behave in the opposite way: .pull-left would float: right, ml5 (margin-left: 5) would do a margin-right: 5 (and reset margin-left back to 0), etc..
 
 
+Here's an example of a similar situation without using helpers.css:
+
+    <div class="dr-box"></div>
+    <style>
+    .dr-box{
+        float: left;
+        margin-left: 5px;
+        /*other styles*/
+    }
+    </style>
+
+In order to make this work on RTL you'll have to add some extra CSS and override the previous rules (most probably in an rtl.app.css file):
+
+    <style>
+    .dr-box{
+        float: right;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    </style>
+
+However using helpers.css
+
+    <div class="dr-box ml5 pull-left"></div>
+    <style>
+    .dr-box{
+         /*other styles*/
+    }
+    </style>
+This code works fine in both RTL and LTR (you just have to switch the direction from LTR to RTL on the HTML tag) and  include the rtl.helpers.css.
+
+
 ## 3. On responsivity
 
 **helpers.css** provides classes for fonts and line-heights.  
